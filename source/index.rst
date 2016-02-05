@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Hirotosh-EVE-Tools's documentation!
-==============================================
+Hirotosh MabataのEVE Toolマニュアル
+===================================
 
 Contents:
 
@@ -12,3 +12,7 @@ Contents:
    :maxdepth: 2
 
    name_id_tables
+   how_to_import_library
+   get_market_price
+   get_system_cost_index
+   how_to_refresh_cell

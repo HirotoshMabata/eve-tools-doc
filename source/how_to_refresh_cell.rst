@@ -1,0 +1,47 @@
+.. _how_to_refresh_cell:
+
+価格を更新する方法
+==================
+
+価格取得関数を再取得する方法を解説します。
+
+利用者側でコードの微修正と、セルひとつが必要です。
+たぶんご存知の方にはお馴染みの方法です。
+
+準備
+----
+
+1. コードを以下のように修正する
+
+   :ref:`get_market_price` の場合::
+
+     function getMarketPrice(a, b, c, d, e, f) {
+       return EVEOnlineGetCRESTMarketPrice.getMarketPrice(a, b, c, d, e)
+     }
+
+   :ref:`get_system_cost_index` の場合::
+
+      function getSystemCostIndex(a,b,c) {
+        return EVESystemCostIndex.getSystemCostIndex(a,b)
+      }
+
+   引数が一つ増えただけですね。
+
+2. スプレッドシートの数式に引数を一つ追加する
+
+   例えば以下のような感じで、末尾に一つ追加します。
+   このとき、どこでもいいので空いている使わないセルを指定してください。
+   (異なるシートでもOKです) ::
+
+     =getMarketPrice(10000002, C2, "Jita IV - Moon 4 - Caldari Navy Assembly Plant", "sell", "min", $D$1)
+
+更新する方法
+------------
+
+手順２で指定したセルに適当な数値を入れると、更新できます。
+再度更新するには、入っていた値とは違う値を入れる必要があります。
+
+違う数値を入れるのが面倒になると思うので、サイドバーからボタン一つで更新できるようなUIを作ろうかと思っています。
+（それでもセル一つお借りしますが…）
+
+欲しい方いましたらお声かけいただけるとバリバリやります。
