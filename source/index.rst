@@ -13,6 +13,7 @@ Hirotosh EVE Tools
    how_to_import_library
    get_market_price
    get_system_cost_index
+   get_adjusted_price
    how_to_refresh_cell
 
 質問、バグ報告、ISK寄付は Hirotosh Mabata へどうぞ!
