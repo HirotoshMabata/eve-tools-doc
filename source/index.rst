@@ -14,6 +14,7 @@ Hirotosh EVE Tools
    get_market_price
    get_system_cost_index
    get_adjusted_price
+   get_trade_volume
    how_to_refresh_cell
 
 質問、バグ報告、ISK寄付は Hirotosh Mabata へどうぞ!
