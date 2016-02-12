@@ -1,23 +1,9 @@
 .. _get_adjusted_price:
 
-Adjusted Price取得関数 (Google SpreadSheet)
-===========================================
+Adjusted Price取得関数
+======================
 
 CREST経由で、生産のジョブコスト算出に使われる「Adjusted Price」を返します。
-
-インストール情報
-----------------
-使用前の準備については :ref:`how_to_import_library` を参照してください。
-
-プロジェクトID::
-
-  M_2APPpTCsPs7VyQD2NROtOdSnBAmjm9N
-
-コード::
-
-  function getAdjustedPrice(a) {
-    return EVEAdjustedPrice.getAdjustedPrice(a)
-  }
 
 使用方法
 --------
@@ -41,8 +27,3 @@ CREST経由で、生産のジョブコスト算出に使われる「Adjusted Pri
 ----------
 
 * CCPのサーバとの接続に失敗した場合でも、3回までリトライします
-
-更新履歴
---------
-Ver.1 2016/02/04
-     初出
