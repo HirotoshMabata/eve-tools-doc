@@ -14,6 +14,9 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
    get_market_price
    get_system_cost_index
    get_trade_volume
+   get_character_names
+   character_name_to_id
+   get_skill_level
 
 インストール方法
 ----------------
@@ -56,6 +59,18 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
        return EVEIndustryToolbox.getSystemCostIndex(system_name, activity_name)
      }
 
+     function getCharacterNames(key, vCode, refresh_code) {
+       return EVEIndustryToolbox.getCharacterNames(key, vCode)
+     }
+
+     function characterNameToID(name, refresh_code) {
+       return EVEIndustryToolbox.characterNameToID(name)
+     }
+
+     function getSkillLevel(key, vCode, characterID, skillTypeID, refresh_code) {
+       return EVEIndustryToolbox.getSkillLevel(key, vCode, characterID, skillTypeID)
+     }
+
      function onOpen() {
        EVEIndustryToolbox.onOpen()
      }
@@ -68,5 +83,8 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
 
 更新履歴
 --------
+Ver.2 2016/02/13
+    getCharacterNames, characterNameToID, getSkillLevel関数を追加
+
 Ver.1 2016/02/12
-     初出ということで。
+    初出ということで。
