@@ -29,8 +29,3 @@ CREST経由で、特定の星系での生産活動にかかるコスト指数を
 ::
 
    =getSystemCostIndex("Jita", "Manufacturing")
-
-細かな仕様
-----------
-
-* CCPのサーバとの接続に失敗した場合でも、3回までリトライします
