@@ -83,6 +83,9 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
 
 更新履歴
 --------
+Ver.3 2016/02/13
+    getSkillLevel関数: スキルを覚えていない場合は 0 を返すよう修正
+
 Ver.2 2016/02/13
     getCharacterNames, characterNameToID, getSkillLevel関数を追加
 
