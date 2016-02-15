@@ -17,6 +17,7 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
    get_character_names
    character_name_to_id
    get_skill_level
+   get_implants
 
 インストール方法
 ----------------
