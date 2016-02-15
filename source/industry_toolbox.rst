@@ -72,6 +72,10 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
        return EVEIndustryToolbox.getSkillLevel(key, vCode, characterID, skillTypeID)
      }
 
+     function getImplants(key, vCode, characterID, refresh_code) {
+       return EVEIndustryToolbox.getImplants(key, vCode, characterID)
+     }
+
      function onOpen() {
        EVEIndustryToolbox.onOpen()
      }
@@ -84,6 +88,9 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
 
 更新履歴
 --------
+Ver.4 2016/02/15
+    getImplants関数を追加
+
 Ver.3 2016/02/13
     getSkillLevel関数: スキルを覚えていない場合は 0 を返すよう修正
 
