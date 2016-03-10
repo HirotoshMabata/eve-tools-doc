@@ -18,6 +18,7 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
    character_name_to_id
    get_skill_level
    get_implants
+   get_market_stock
 
 インストール方法
 ----------------
@@ -76,6 +77,10 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
        return EVEIndustryToolbox.getImplants(key, vCode, characterID)
      }
 
+     function getMarketStock(region_id, type_id, station_name, order_string) {
+       return EVEIndustryToolbox.getMarketStock(region_id, type_id, station_name, order_string)
+     }
+
      function onOpen() {
        EVEIndustryToolbox.onOpen()
      }
@@ -88,6 +93,9 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
 
 更新履歴
 --------
+Ver.5 2016/03/10
+    getMarketStock関数を追加
+
 Ver.4 2016/02/15
     getImplants関数を追加
 
