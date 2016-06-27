@@ -19,6 +19,7 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
    get_skill_level
    get_implants
    get_market_stock
+   get_market_history
 
 インストール方法
 ----------------
@@ -77,8 +78,12 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
        return EVEIndustryToolbox.getImplants(key, vCode, characterID)
      }
 
-     function getMarketStock(region_id, type_id, station_name, order_string) {
+     function getMarketStock(region_id, type_id, station_name, order_string, refresh_code) {
        return EVEIndustryToolbox.getMarketStock(region_id, type_id, station_name, order_string)
+     }
+
+     function getMarketHistory(region_id, type_id, refresh_code) {
+       return EVEIndustryToolbox.getMarketHistory(region_id, type_id)
      }
 
      function onOpen() {
@@ -91,8 +96,22 @@ Googleスプレッドシート向けのマーケット情報を取得する関�
 
 以上で準備完了です。
 
+アップデート方法
+----------------
+
+1. 最新のバージョンを選択しなおす
+
+.. image:: ../images/select_version.png
+
+2. 上記のコードをコピペしなおして保存する
+
+以上でアップデート完了です。
+
 更新履歴
 --------
+Ver.8 2016/06/27
+    GetMarketHistory関数を追加
+
 Ver.7 2016/06/14
     CCP側のCREST仕様変更に対応
 
