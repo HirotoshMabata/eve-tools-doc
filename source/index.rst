@@ -11,6 +11,7 @@ Hirotosh EVE Tools
 
    name_id_tables
    industry_toolbox
+   industry_toolbox_excel
    how_to_refresh_cell
 
 質問、バグ報告、ISK寄付は Hirotosh Mabata へどうぞ!
