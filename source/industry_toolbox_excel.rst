@@ -13,6 +13,7 @@ Excel向けのマーケット情報を取得する関数群です。
 
    get_market_price
    get_income_and_expenses
+   get_trade_volume
 
 インストール方法
 ----------------
@@ -30,5 +31,8 @@ Excel向けのマーケット情報を取得する関数群です。
 
 更新履歴
 --------
+Ver.1.2.0 2016/10/16
+    GetTradeVolume関数に7日間/30日間平均を追加
+
 Ver.1.1.1 2016/10/12
     初出
